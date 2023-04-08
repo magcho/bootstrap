@@ -1,0 +1,55 @@
+- name: update homebrew
+  community.general.homebrew:
+    update_homebrew: true
+
+- name: install homebrew apps
+  community.general.homebrew:
+    name:
+      - ansible
+      - bat
+      - ffmpeg
+      - fzf
+      - exa
+      - gh
+      - ripgrep
+      - tig
+      - tree
+      - tig
+      - wget
+      - chezmoi
+      - jq
+      - git
+      - sqlite
+
+- name: install cask apps
+  community.general.homebrew_cask:
+    name:
+      # utitlties
+      - 1password-cli
+      - karabiner-elements
+      - raycast
+      - iterm2
+      - discord
+      - spotify
+      - vlc
+      - asana
+      - zoho-mail
+      - balenaetcher
+      - slack
+
+      # dev tools
+      - stoplight-studio
+      - wireshark
+      - sequel-pro
+      - tableplus
+      - postman
+      - trailer
+      - burp-suite
+      - sourcetree
+      - visual-studio-code
+
+      # browsers
+      - firefox
+      - google-chrome
+      - microsoft-edge
+      - google-chrome-beta
