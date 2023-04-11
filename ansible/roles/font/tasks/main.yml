@@ -1,0 +1,7 @@
+- name: build sf-monosquare
+  community.general.homebrew:
+    name:
+      - sfmono-square
+
+- name: open font dir
+  shell: open "$(brew --prefix sfmono-square)/share/fonts"

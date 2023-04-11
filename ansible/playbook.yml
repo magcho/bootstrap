@@ -7,4 +7,5 @@
     # - sample
     # - homebrew
     # - chezmoi
-    - macos-defaults
+    # - macos-defaults
+    - font
