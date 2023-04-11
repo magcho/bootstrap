@@ -4,6 +4,7 @@
   gather_facts: no
   become: no
   roles:
-    - sample
-    - homebrew
-    - chezmoi
+    # - sample
+    # - homebrew
+    # - chezmoi
+    - macos-defaults
