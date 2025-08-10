@@ -15,7 +15,6 @@
       - bat
       - ffmpeg
       - fzf
-      - exa
       - gh
       - ripgrep
       - tig
@@ -29,13 +28,11 @@
       - vim
       - tmux
 
-- name: install emacs 29
-  community.general.homebrew:
-    name: emacs-plus@29
-    install_options: with-native-comp
 
 - name: install cask apps
   community.general.homebrew_cask:
+    install_options:
+      - force
     name:
       # utitlties
       - 1password-cli
@@ -54,12 +51,12 @@
       # dev tools
       - stoplight-studio
       - wireshark
-      - sequel-pro
-      - tableplus
-      - postman
-      - trailer
-      - burp-suite
-      - sourcetree
+      #- sequel-pro
+      #- tableplus
+      #- postman
+      #- trailer
+      #- burp-suite
+      #- sourcetree
       - visual-studio-code
 
       # browsers

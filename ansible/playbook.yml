@@ -5,7 +5,7 @@
   become: no
   roles:
     # - sample
-    # - homebrew
-    # - chezmoi
-    # - macos-defaults
-    - font
+    - homebrew
+    - chezmoi
+    - macos-defaults
+    # - font
