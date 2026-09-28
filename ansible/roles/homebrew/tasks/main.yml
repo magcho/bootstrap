@@ -3,6 +3,12 @@
     name:
       - d12frosted/emacs-plus
       - delphinus/sfmono-square
+      - asmvik/formulae
+      - docker/tap
+      - k1low/tap
+      - osx-cross/arm
+      - osx-cross/avr
+      - qmk/qmk
 
 - name: update homebrew
   community.general.homebrew:
@@ -19,7 +25,6 @@
       - ripgrep
       - tig
       - tree
-      - tig
       - wget
       - chezmoi
       - jq
@@ -27,6 +32,68 @@
       - sqlite
       - vim
       - tmux
+      - eza
+      - sheldon
+      - htop
+      - watch
+      - nkf
+      - markdown
+      - the_silver_searcher
+      - yq
+      - mosh
+      - sshx
+      - herdr
+      - fprobe
+      - imagesnap
+      - emacs
+      - libgccjit
+      - tree-sitter
+      - asmvik/formulae/yabai
+
+      # languages / runtimes
+      - go
+      - fnm
+      - mise
+      - uv
+      - python@3.11
+      - openjdk@17
+      - duckdb
+
+      # build tools
+      - autoconf
+      - cmake
+      - ninja
+      - gcc
+      - texinfo
+      - gobject-introspection
+      - jansson
+      - zlib
+
+      # embedded / keyboard
+      - arm-none-eabi-gcc
+      - osx-cross/avr/avr-gcc@9
+      - qmk/qmk/qmk
+      - qemu
+
+      # infra / cloud
+      - awscli
+      - cloudflared
+      - glab
+      - googleworkspace-cli
+      - k9s
+      - kind
+      - kubectx
+      - kubernetes-cli
+      - stern
+      - lazydocker
+      - tfenv
+      - sops
+      - mkcert
+      - nmap
+
+      # security
+      - gnupg
+      - pinentry-mac
 
 
 - name: install cask apps
@@ -42,24 +109,31 @@
       - discord
       - spotify
       - vlc
-      - asana
-      - zoho-mail
       - balenaetcher
       - slack
       - 1password
+      - appcleaner
+      - jordanbaird-ice
+      - linearmouse
+      - audacity
+      - inkscape
+      - bambu-studio
+      - openscad@snapshot
 
       # dev tools
-      - stoplight-studio
-      - wireshark
-      #- sequel-pro
-      #- tableplus
-      #- postman
-      #- trailer
-      #- burp-suite
-      #- sourcetree
+      - wireshark-app
       - visual-studio-code
+      - cursor
+      - postman
+      - ngrok
+      - arduino-ide
+      - codex
+      - lm-studio
 
       # browsers
       - firefox
       - google-chrome
+      - google-chrome@beta
+      - google-chrome@canary
       - microsoft-edge
+      - chatgpt-atlas
