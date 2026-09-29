@@ -10,6 +10,10 @@
       - osx-cross/avr
       - qmk/qmk
 
+# Homebrew 7 以降はサードパーティ tap を trust しないと読み込まれない
+- name: trust taps
+  shell: brew trust d12frosted/emacs-plus delphinus/sfmono-square asmvik/formulae docker/tap k1low/tap osx-cross/arm osx-cross/avr qmk/qmk
+
 - name: update homebrew
   community.general.homebrew:
     update_homebrew: true
@@ -72,6 +76,7 @@
       # embedded / keyboard
       - arm-none-eabi-gcc
       - osx-cross/avr/avr-gcc@9
+      - python@3.13 # qmk の bottle が python@3.13 の venv 前提
       - qmk/qmk/qmk
       - qemu
 
@@ -136,4 +141,3 @@
       - google-chrome@beta
       - google-chrome@canary
       - microsoft-edge
-      - chatgpt-atlas
